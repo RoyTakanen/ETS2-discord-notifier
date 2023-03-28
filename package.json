@@ -1,0 +1,10 @@
+{
+  "devDependencies": {
+    "nodemon": "^2.0.22",
+    "prettier": "2.8.7"
+  },
+  "dependencies": {
+    "discord.js": "^14.8.0",
+    "source-server-query": "^3.0.3"
+  }
+}
