@@ -9,8 +9,6 @@ let LAST_MESSAGE_HANDLE_TIME;
 
 function watcher() {
     query.info(process.env.ETS2_HOST, process.env.ETS2_PORT, 1000).then(async (info) => {
-        console.log(info.players)
-
         if (info.players != PLAYERS_ONLINE) {
             const embed = new EmbedBuilder()
                 .setTitle('Player change detected!')
@@ -34,3 +32,5 @@ function watcher() {
 }
   
 setInterval(watcher, 1000);
+
+console.log("I have started")
