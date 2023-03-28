@@ -3,7 +3,7 @@ const { EmbedBuilder, WebhookClient } = require('discord.js');
 
 const webhookClient = new WebhookClient({ url: process.env.DISCORD_WEBHOOK });
 
-let PLAYERS_ONLINE = 69;
+let PLAYERS_ONLINE = 0;
 let LAST_MESSAGE_HANDLE = "";
 let LAST_MESSAGE_HANDLE_TIME;
 

@@ -12,6 +12,8 @@ This Docker container notifies whenever ETS2 dedicated server player count chang
 
 ## Example docker-compose.yml
 
+Create `.env` file to the same directory with variables mentioned aboce.
+
 ```yml
 version: '3.3'
 
@@ -20,7 +22,8 @@ services:
     image: ghcr.io/roytakanen/ets2-discord-notifier:master 
     restart: always
     container_name: ets2_discord_notifier
-  
+    env_file:
+      - .env
   watchtower:
     image: containrrr/watchtower
     restart: always
